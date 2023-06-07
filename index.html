@@ -4,25 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="script.js"></script> -->
-    <title>Document</title>
+   <link rel="stylesheet" href="./style.css">
+    <title>Rock Paper Scissors</title>
 </head>
 <body style="display: flex; flex-direction: column; flex: auto;">
-    <div class="display">
+    <div class="container">
+        <h1>Rock Paper Scissor</h1>
+        <div class="display">
         
-        <div class="player">
-            <p>Player Score</p>
-            <!-- <p id="plauerValue"></p> -->
+            <div class="player">
+                <p>Player</p>
+                <!-- <p id="plauerValue"></p> -->
+            </div>
+            <div class="computer">
+                <p>Computer</p>
+                <!-- <p id="computerValue"></p> -->
+            </div>
         </div>
-        <div class="computer">
-            <p>Computer Score</p>
-            <!-- <p id="computerValue"></p> -->
+        <h2 style ="align-self: center;" id="winner"></h2>
+        <div class="buttons">
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissor">Scissor</button>
         </div>
+
+        <div id="playAgain">
+            <div class="restartUi">
+                <h4>Do You Want To Play Again?</h2>
+                <div class="confirmation">
+                    <button id="yes">Yes</button>
+                    <button id="no">No</button>
+                </div>
+            </div>
+        </div>
+
     </div>
-    <h2 style ="align-self: center;" id="winner"></h2>
-    <button id="rock">Rock</button>
-    <button id="paper">Paper</button>
-    <button id="scissor">Scissor</button>
     <script src="./script.js"></script>
 </body>
 </html>
